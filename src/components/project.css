@@ -1,0 +1,109 @@
+/* Projects.css */
+
+/* Section background */
+#projects {
+    background: linear-gradient(to bottom, #1f2937, #111827);
+    color: #f9fafb;
+    padding: 6rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Section header */
+  #projects .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  #projects .section-header h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Project grid */
+  #projects .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Project card */
+  #projects .project {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 15px rgba(37, 99, 235, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #projects .project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(37, 99, 235, 0.35);
+  }
+  
+  /* Project title */
+  #projects .project h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f9fafb;
+  }
+  
+  /* Project description */
+  #projects .project p {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+  }
+  
+  /* Tech stack */
+  #projects .stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #projects .stack span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    color: white;
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+  }
+  
+  /* Links */
+  #projects .links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  #projects .link {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #f9fafb;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  #projects .link:hover {
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.3);
+  }
+  

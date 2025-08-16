@@ -1,0 +1,68 @@
+/* Skills.css */
+
+/* Section background */
+#skills {
+    background: linear-gradient(to bottom, #1f2937, #111827);
+    color: #f9fafb;
+    padding: 6rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Section header */
+  #skills .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  #skills .section-header h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Skills grid */
+  #skills .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  /* Individual skill card */
+  #skills .skill {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: #f9fafb;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 12px rgba(37, 99, 235, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: default;
+  }
+  
+  #skills .skill:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(37, 99, 235, 0.35);
+    background: rgba(59, 130, 246, 0.1);
+  }
+  
+  /* Skill name */
+  #skills .skill p {
+    margin: 0;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Optional: Add a subtle gradient glow on hover */
+  #skills .skill:hover p {
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
