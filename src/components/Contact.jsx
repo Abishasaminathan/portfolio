@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./Contact.css";
+import "./contact.css";
 
 export default function Contact() {
   const onSubmit = (e) => {
